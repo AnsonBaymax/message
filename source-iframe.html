@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="en"><head><style data-rc-order="prepend" rc-util-key="@ant-design-icons">
+.anticon {
+  display: inline-flex;
+  alignItems: center;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon > * {
+  line-height: 1;
+}
+
+.anticon svg {
+  display: inline-block;
+}
+
+.anticon::before {
+  display: none;
+}
+
+.anticon .anticon-icon {
+  display: block;
+}
+
+.anticon[tabindex] {
+  cursor: pointer;
+}
+
+.anticon-spin::before,
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+
+@-webkit-keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>消息管理系统</title>
+    <link rel="icon" type="image/x-icon" href="https://static.seeyouyima.com/favicon/meiyou-favicon.ico">
+  <link rel="stylesheet" href="https://static.seeyouyima.com/admin-manager/push-management/assets/24ea0f87.78a61fff.css">
+<link rel="stylesheet" href="https://static.seeyouyima.com/admin-manager/push-management/assets/2f99e7e7.a5ddc0ff.css"><script type="module" src="https://static.seeyouyima.com/admin-manager/push-management/hoisted.e219033c.js"></script><style data-jss="" data-meta="Unthemed">
+.placeholder-0-1-6 {
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  border-color: #ededed;
+  border-style: dashed;
+  border-width: 1px;
+  border-radius: 8px;
+  justify-content: center;
+  background-color: #fff;
+}
+.placeholder-0-1-6:hover {
+  border-color: #ff4d88;
+}
+.placeholderDragover-0-1-7 {
+  border-color: #ff4d88;
+}
+.error-0-1-8 {
+  border-color: #ff4d88;
+  border-style: solid;
+}
+.disabled-0-1-9 {
+  color: #999;
+  cursor: no-drop;
+  border-width: 0;
+  background-color: #ededed;
+}
+.imageRoot-0-1-10 {
+  overflow: hidden;
+  border-color: #ededed;
+  border-style: dashed;
+  border-width: 1px;
+  border-radius: 8px;
+}
+.imageRoot-0-1-10 img {
+  object-fit: contain;
+}
+</style><style data-jss="" data-meta="Unthemed">
+.inmailMaterial-0-1-1 .ant-radio-button-wrapper {
+  border: none;
+  height: auto;
+  margin: 0 10px 10px 0;
+  padding: 0;
+}
+.inmailMaterial-0-1-1 .ant-radio-button-wrapper:not(:first-child)::before {
+  display: none;
+}
+.inmailMaterial-0-1-1 .ant-radio-button-wrapper:hover, .inmailMaterial-0-1-1 .ant-radio-button-wrapper-checked, .inmailMaterial-0-1-1 .ant-radio-button-wrapper:focus-within {
+  box-shadow: 0 0 5px 2px rgba(255, 77, 136, 0.3);
+  border-radius: 10px;
+}
+.image-0-1-2 {
+  width: 200px;
+  height: auto;
+}
+</style><style data-jss="" data-meta="Unthemed">
+.container-0-1-3 .ant-tabs-nav {
+  padding: 0 48px;
+  margin-bottom: 0;
+}
+</style><style data-jss="" data-meta="Unthemed">
+.container-0-1-4 {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+.select-0-1-5 {
+  flex: 1;
+}
+</style></head>
+
+  <body>
+    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).only=t=>{(async()=>await(await t())())()},window.dispatchEvent(new Event("astro:only"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t)},o=(t,i)=>{if(t===""||!Array.isArray(i))return i;const[e,n]=i;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const i=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const s of n){const r=s.closest(this.tagName);!r||!r.isSameNode(this)||(e[s.getAttribute("data-astro-template")||"default"]=s.innerHTML,s.remove())}for(const s of i){const r=s.closest(this.tagName);!r||!r.isSameNode(this)||(e[s.getAttribute("name")||"default"]=s.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((i,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate),await import(this.getAttribute("before-hydration-url")),this.start()}start(){const i=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:s}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),r=this.getAttribute("component-export")||"default";if(!r.includes("."))this.Component=a[r];else{this.Component=a;for(const d of r.split("."))this.Component=this.Component[d]}return this.hydrator=s,this.hydrate},i,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="ZvwHms" component-url="https://static.seeyouyima.com/admin-manager/push-management/App.eac47905.js" component-export="default" renderer-url="https://static.seeyouyima.com/admin-manager/push-management/client.bb858c3f.js" props="{}" client="only" before-hydration-url="data:text/javascript;charset=utf-8,//[no before-hydration script]" opts="{&quot;name&quot;:&quot;App&quot;,&quot;value&quot;:&quot;react&quot;}"><div class="ant-card"><div class="ant-card-body"><div class="ant-space ant-space-vertical" style="display: flex; gap: 8px;"><div class="ant-space-item" style=""><nav class="ant-breadcrumb"><ol><li><span class="ant-breadcrumb-link">消息管理</span><span class="ant-breadcrumb-separator">/</span></li><li><span class="ant-breadcrumb-link"><a href="/plan/periodic/list">周期性计划</a></span><span class="ant-breadcrumb-separator">/</span></li><li><span class="ant-breadcrumb-link">新增</span></ol></nav></div><div class="ant-space-item"><div class="ant-space ant-space-vertical" style="display: flex; gap: 8px;"><div class="ant-space-item" style=""><form class="ant-form ant-form-horizontal"><div class="ant-card ant-card-small ant-card-type-inner"><div class="ant-card-head" style="border: none; background: rgb(245, 245, 245);"><div class="ant-card-head-wrapper"><div class="ant-card-head-title">基础信息</div></div></div><div class="ant-card-body" style="padding-bottom: 0px;"><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="name" class="ant-form-item-required" title="计划名称">计划名称<span role="img" aria-label="question-circle" title="" class="anticon anticon-question-circle ant-form-item-tooltip"><svg viewBox="64 64 896 896" focusable="false" data-icon="question-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M623.6 316.7C593.6 290.4 554 276 512 276s-81.6 14.5-111.6 40.7C369.2 344 352 380.7 352 420v7.6c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V420c0-44.1 43.1-80 96-80s96 35.9 96 80c0 31.1-22 59.6-56.1 72.7-21.2 8.1-39.2 22.3-52.1 40.9-13.1 19-19.9 41.8-19.9 64.9V620c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-22.7a48.3 48.3 0 0130.9-44.8c59-22.7 97.1-74.7 97.1-132.5.1-39.3-17.1-76-48.3-103.3zM472 732a40 40 0 1080 0 40 40 0 10-80 0z"></path></svg></span></label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input id="name" aria-required="true" class="ant-input" type="text" value=""></div></div></div></div></div><div><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label class="ant-form-item-no-colon" title=" "> </label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><button type="button" class="ant-btn ant-btn-default"><span>添加计划标识</span></button></div></div></div></div></div></div><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="biz_key" class="ant-form-item-required" title="所属业务">所属业务</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-select ant-select-in-form-item ant-select-single ant-select-show-arrow" aria-required="true" style="width: 100%;"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" id="biz_key" autocomplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="biz_key_list" aria-autocomplete="list" aria-controls="biz_key_list" aria-activedescendant="biz_key_list_0" aria-required="true" readonly="" unselectable="on" value="" style="opacity: 0;"></span><span class="ant-select-selection-placeholder">请选择</span></div><span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;"><span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></span></div></div></div></div></div></div><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="channel_keys" class="ant-form-item-required" title="推送方式">推送方式</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-checkbox-group" id="channel_keys" aria-required="true"><label class="ant-checkbox-wrapper ant-checkbox-wrapper-in-form-item ant-checkbox-group-item"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox" value="MEETYOU_PUSH"><span class="ant-checkbox-inner"></span></span><span>PUSH</span></label><label class="ant-checkbox-wrapper ant-checkbox-wrapper-checked ant-checkbox-wrapper-in-form-item ant-checkbox-group-item"><span class="ant-checkbox ant-checkbox-checked"><input class="ant-checkbox-input" type="checkbox" value="MEETYOU_INMAIL" checked=""><span class="ant-checkbox-inner"></span></span><span>站内信</span></label></div></div></div></div></div></div><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="app_id" class="ant-form-item-required" title="APP">APP</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-select ant-select-in-form-item ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-show-search" aria-required="true" style="width: 250px;"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" id="app_id" autocomplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="app_id_list" aria-autocomplete="list" aria-controls="app_id_list" aria-activedescendant="app_id_list_0" aria-required="true" value=""></span><span class="ant-select-selection-item" title="美柚">美柚</span></div><span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;"><span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></span><span class="ant-select-clear" unselectable="on" aria-hidden="true" style="user-select: none;"><span role="img" aria-label="close-circle" class="anticon anticon-close-circle"><svg fill-rule="evenodd" viewBox="64 64 896 896" focusable="false" data-icon="close-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm127.98 274.82h-.04l-.08.06L512 466.75 384.14 338.88c-.04-.05-.06-.06-.08-.06a.12.12 0 00-.07 0c-.03 0-.05.01-.09.05l-45.02 45.02a.2.2 0 00-.05.09.12.12 0 000 .07v.02a.27.27 0 00.06.06L466.75 512 338.88 639.86c-.05.04-.06.06-.06.08a.12.12 0 000 .07c0 .03.01.05.05.09l45.02 45.02a.2.2 0 00.09.05.12.12 0 00.07 0c.02 0 .04-.01.08-.05L512 557.25l127.86 127.87c.04.04.06.05.08.05a.12.12 0 00.07 0c.03 0 .05-.01.09-.05l45.02-45.02a.2.2 0 00.05-.09.12.12 0 000-.07v-.02a.27.27 0 00-.05-.06L557.25 512l127.87-127.86c.04-.04.05-.06.05-.08a.12.12 0 000-.07c0-.03-.01-.05-.05-.09l-45.02-45.02a.2.2 0 00-.09-.05.12.12 0 00-.07 0z"></path></svg></span></span></div></div></div></div></div></div><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="sub_account_key" class="ant-form-item-required" title="订阅号">订阅号</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-select ant-select-in-form-item ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-show-search" aria-required="true" style="width: 100%;"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" id="sub_account_key" autocomplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="sub_account_key_list" aria-autocomplete="list" aria-controls="sub_account_key_list" aria-activedescendant="sub_account_key_list_0" aria-required="true" value=""></span><span class="ant-select-selection-placeholder">请选择</span></div><span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;"><span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></span></div></div></div></div></div></div>
+<div class="ant-form-item category-linkage-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="level1_category" class="ant-form-item-required" title="一级分类">一级分类</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><select id="level1_category" class="ant-input category-select" aria-required="true"><option value="">请选择</option><option value="服务型">服务型</option><option value="内容型">内容型</option><option value="营销型">营销型</option></select></div></div></div></div></div>
+<div class="ant-form-item category-linkage-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="level2_category" class="ant-form-item-required" title="二级分类">二级分类</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><select id="level2_category" class="ant-input category-select" aria-required="true"><option value="">请先选择一级分类</option></select></div></div></div></div></div>
+<style>
+.category-select {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  background: #fff;
+  padding: 0 11px;
+  color: rgba(0, 0, 0, 0.88);
+}
+.category-select:focus {
+  outline: none;
+  border-color: #4096ff;
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+</style>
+<script>
+(function () {
+  function initCategoryAndMessageLinkage() {
+    var level1 = document.getElementById('level1_category');
+    var level2 = document.getElementById('level2_category');
+    var messageGroup = document.getElementById('material_config_inmail_material_type');
+    var templateItem = document.getElementById('service_notice_template_item');
+    var templateSelect = document.getElementById('service_notice_template');
+
+    if (!level1 || !level2 || !messageGroup) return false;
+
+    var categoryMap = {
+      '服务型': ['安全合规', '账号通知', '资产通知', '订单通知', '会员权益', '活动反馈', '行动提醒', '互动提醒', '服务公告'],
+      '内容型': ['知识科普', '分析报告', '社区推荐', '情感陪伴'],
+      '营销型': ['活动推广', '商业推广', '互动引导', '会员运营', '大促营销', '功能导流']
+    };
+
+    var serviceTemplateMap = {
+      '服务型': {
+        '安全合规': ['安全登录通知', '账号风险提醒', '认证结果通知', '绑定结果通知', '隐私政策更新通知', '协议更新通知', '权限变更提醒', '账号封号通知', '账号禁言通知'],
+        '账号通知': ['申请注销通知', '用户信息变更提醒', '关联账号解绑通知', '亲友绑定成功', '亲友解绑通知'],
+        '资产通知': ['金豆到账通知', '金豆过期提醒', '优惠券到账通知', '优惠券过期提醒', '红包到账通知', '红包过期提醒', '返现到账通知', '现金到账提醒', '现金过期提醒', '提现通知', '金豆兑换成功提醒', '卡券核销成功通知', '卡券领取通知'],
+        '订单通知': ['订单生成提醒（包含返现/问诊/药品/处方单）', '订单状态变更通知（包含返现/问诊/药品/处方单）', '物流通知（商品/奖品/试用品已发货、配送中、签收、物流异常通知）'],
+        '会员权益': ['会员开通成功通知', '会员续费成功通知', '会员到期提醒', '会员权益生效通知', '会员权益失效通知', '会员权益使用提醒'],
+        '活动反馈': ['活动审核结果通知', '中奖结果通知', '奖品领取通知', '奖励发放通知', '入选结果通知', '发布结果通知', '活动结果更正通知'],
+        '行动提醒': ['签到提醒', '记录提醒（包含经期记录提醒/排卵日提醒/宝宝记录提醒/产检提醒等）', '待办提醒', '补记录提醒', '报告查看提醒', '试用报告提交提醒'],
+        '互动提醒': ['评论提醒', '回复提醒', '点赞提醒', '关注提醒', '增加粉丝提醒'],
+        '服务公告': ['服务/活动下线通知', '服务/活动暂停通知', '功能调整通知', '规则变更通知']
+      }
+    };
+
+    function renderLevel2Options(level1Value) {
+      var options = categoryMap[level1Value] || [];
+      var optionHtml = ['<option value="">请选择</option>'];
+      for (var i = 0; i < options.length; i++) {
+        var item = options[i];
+        optionHtml.push('<option value="' + item + '">' + item + '</option>');
+      }
+      if (!options.length) {
+        optionHtml = ['<option value="">请先选择一级分类</option>'];
+      }
+      level2.innerHTML = optionHtml.join('');
+    }
+
+    function renderTemplateOptions() {
+      if (!templateSelect) return;
+
+      var currentLevel1 = level1.value;
+      var currentLevel2 = level2.value;
+      var level1Templates = serviceTemplateMap[currentLevel1] || {};
+      var templates = level1Templates[currentLevel2] || [];
+
+      var html = [];
+      if (!currentLevel2) {
+        html = ['<option value="">请先选择二级分类</option>'];
+      } else if (!templates.length) {
+        html = ['<option value="">当前分类暂无模板</option>'];
+      } else {
+        html.push('<option value="">请选择消息服务模板</option>');
+        for (var i = 0; i < templates.length; i++) {
+          var t = templates[i];
+          html.push('<option value="' + t.replace(/"/g, '&quot;') + '">' + t + '</option>');
+        }
+      }
+
+      templateSelect.innerHTML = html.join('');
+    }
+
+    function getMessageInput(value) {
+      return messageGroup.querySelector('input[type="radio"][value="' + value + '"]');
+    }
+
+    function getCurrentMessageInput() {
+      return messageGroup.querySelector('input[type="radio"]:checked');
+    }
+
+    function syncRadioClasses() {
+      var labels = messageGroup.querySelectorAll('label.ant-radio-button-wrapper');
+      for (var i = 0; i < labels.length; i++) {
+        var label = labels[i];
+        var input = label.querySelector('input[type="radio"]');
+        var btn = label.querySelector('.ant-radio-button');
+        var checked = !!(input && input.checked);
+        label.classList.toggle('ant-radio-button-wrapper-checked', checked);
+        if (btn) {
+          btn.classList.toggle('ant-radio-button-checked', checked);
+        }
+      }
+    }
+
+    function setMessageType(value) {
+      var input = getMessageInput(value);
+      if (!input || input.disabled || input.closest('label').style.display === 'none') return;
+
+      var all = messageGroup.querySelectorAll('input[type="radio"]');
+      for (var i = 0; i < all.length; i++) {
+        all[i].checked = false;
+      }
+
+      input.checked = true;
+      syncRadioClasses();
+      updateTemplateVisibility();
+    }
+
+    function updateTemplateVisibility() {
+      if (!templateItem) return;
+      var current = getCurrentMessageInput();
+      var show = level1.value === '服务型' && current && current.value === 'REMIND';
+      templateItem.style.display = show ? '' : 'none';
+      if (show) {
+        renderTemplateOptions();
+      }
+    }
+
+    function updateMessageTypeByCategory(level1Value) {
+      var remindInput = getMessageInput('REMIND');
+      if (!remindInput) return;
+
+      var remindLabel = remindInput.closest('label.ant-radio-button-wrapper');
+      var shouldHideRemind = level1Value === '内容型' || level1Value === '营销型';
+
+      if (remindLabel) {
+        remindLabel.style.display = shouldHideRemind ? 'none' : '';
+      }
+
+      if (shouldHideRemind && remindInput.checked) {
+        setMessageType('CONTENT');
+      }
+
+      if (level1Value === '服务型') {
+        setMessageType('REMIND');
+      }
+
+      syncRadioClasses();
+      updateTemplateVisibility();
+    }
+
+    messageGroup.addEventListener('click', function (e) {
+      var target = e.target;
+      var label = target.closest('label.ant-radio-button-wrapper');
+      if (!label || !messageGroup.contains(label)) return;
+
+      if (label.style.display === 'none') return;
+      var input = label.querySelector('input[type="radio"]');
+      if (!input) return;
+
+      setMessageType(input.value);
+    });
+
+    var radios = messageGroup.querySelectorAll('input[type="radio"]');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].addEventListener('change', function () {
+        syncRadioClasses();
+        updateTemplateVisibility();
+      });
+    }
+
+    level1.addEventListener('change', function (e) {
+      renderLevel2Options(e.target.value);
+      renderTemplateOptions();
+      updateMessageTypeByCategory(e.target.value);
+    });
+
+    level2.addEventListener('change', function () {
+      renderTemplateOptions();
+    });
+
+    renderLevel2Options(level1.value);
+    renderTemplateOptions();
+    syncRadioClasses();
+    updateMessageTypeByCategory(level1.value);
+    return true;
+  }
+
+  if (!initCategoryAndMessageLinkage()) {
+    window.addEventListener('load', initCategoryAndMessageLinkage, { once: true });
+  }
+})();
+</script>
+
+<div class="ant-form-item" id="service_notice_template_item" style="display: none;"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="service_notice_template" class="ant-form-item-required" title="消息服务模板">消息服务模板</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><select id="service_notice_template" class="ant-input category-select" aria-required="true"><option value="">请先选择二级分类</option></select></div></div></div></div></div>
+<div class="ant-form-item inmailMaterial-0-1-1"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="material_config_inmail_material_type" class="ant-form-item-required" title="消息结构">消息结构</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div aria-required="true" class="ant-radio-group ant-radio-group-outline" id="material_config_inmail_material_type"><label class="ant-radio-button-wrapper ant-radio-button-wrapper-in-form-item"><span class="ant-radio-button"><input class="ant-radio-button-input" type="radio" value="REMIND"><span class="ant-radio-button-inner"></span></span><span><div class="text-center py-1 px-2"><div>服务通知消息</div><img class="image-0-1-2" src="http://static.seeyouyima.com/admin-manager/push-management/assets/inmail-REMIND.png"></div></span></label><label class="ant-radio-button-wrapper ant-radio-button-wrapper-checked ant-radio-button-wrapper-in-form-item"><span class="ant-radio-button ant-radio-button-checked"><input class="ant-radio-button-input" type="radio" value="CONTENT" checked=""><span class="ant-radio-button-inner"></span></span><span><div class="text-center py-1 px-2"><div>图文消息</div><img class="image-0-1-2" src="http://static.seeyouyima.com/admin-manager/push-management/assets/inmail-CONTENT.png"></div></span></label><label class="ant-radio-button-wrapper ant-radio-button-wrapper-in-form-item"><span class="ant-radio-button"><input class="ant-radio-button-input" type="radio" value="TEXT"><span class="ant-radio-button-inner"></span></span><span><div class="text-center py-1 px-2"><div>文本消息</div><img class="image-0-1-2" src="http://static.seeyouyima.com/admin-manager/push-management/assets/inmail-TEXT.png"></div></span></label></div></div></div></div></div></div></div></div><div class="ant-card ant-card-small ant-card-type-inner"><div class="ant-card-head" style="border: none; background: rgb(245, 245, 245);"><div class="ant-card-head-wrapper"><div class="ant-card-head-title">推送内容</div></div></div><div class="ant-card-body" style="padding-bottom: 0px;"><div class="ant-form-item" style="display: none;"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="material_type" class="ant-form-item-required" title="素材来源">素材来源</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-select ant-select-in-form-item ant-select-single ant-select-allow-clear ant-select-show-arrow" aria-required="true" style="width: 100%;"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" id="material_type" autocomplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="material_type_list" aria-autocomplete="list" aria-controls="material_type_list" aria-activedescendant="material_type_list_0" aria-required="true" readonly="" unselectable="on" value="" style="opacity: 0;"></span><span class="ant-select-selection-item" title="自定义">自定义</span></div><span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;"><span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></span><span class="ant-select-clear" unselectable="on" aria-hidden="true" style="user-select: none;"><span role="img" aria-label="close-circle" class="anticon anticon-close-circle"><svg fill-rule="evenodd" viewBox="64 64 896 896" focusable="false" data-icon="close-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm127.98 274.82h-.04l-.08.06L512 466.75 384.14 338.88c-.04-.05-.06-.06-.08-.06a.12.12 0 00-.07 0c-.03 0-.05.01-.09.05l-45.02 45.02a.2.2 0 00-.05.09.12.12 0 000 .07v.02a.27.27 0 00.06.06L466.75 512 338.88 639.86c-.05.04-.06.06-.06.08a.12.12 0 000 .07c0 .03.01.05.05.09l45.02 45.02a.2.2 0 00.09.05.12.12 0 00.07 0c.02 0 .04-.01.08-.05L512 557.25l127.86 127.87c.04.04.06.05.08.05a.12.12 0 00.07 0c.03 0 .05-.01.09-.05l45.02-45.02a.2.2 0 00.05-.09.12.12 0 000-.07v-.02a.27.27 0 00-.05-.06L557.25 512l127.87-127.86c.04-.04.05-.06.05-.08a.12.12 0 000-.07c0-.03-.01-.05-.05-.09l-45.02-45.02a.2.2 0 00-.09-.05.12.12 0 00-.07 0z"></path></svg></span></span></div></div></div></div></div></div><div class="ant-tabs ant-tabs-top container-0-1-3"><div role="tablist" class="ant-tabs-nav"><div class="ant-tabs-nav-wrap"><div class="ant-tabs-nav-list" style="transform: translate(0px, 0px);"><div data-node-key="MEETYOU_INMAIL" class="ant-tabs-tab ant-tabs-tab-active"><div role="tab" aria-selected="true" class="ant-tabs-tab-btn" tabindex="0" id="rc-tabs-0-tab-MEETYOU_INMAIL" aria-controls="rc-tabs-0-panel-MEETYOU_INMAIL">站内信</div></div><div class="ant-tabs-ink-bar ant-tabs-ink-bar-animated" style="left: 0px; width: 42px;"></div></div></div><div class="ant-tabs-nav-operations ant-tabs-nav-operations-hidden"><button type="button" class="ant-tabs-nav-more" tabindex="-1" aria-hidden="true" aria-haspopup="listbox" aria-controls="rc-tabs-0-more-popup" id="rc-tabs-0-more" aria-expanded="false" style="margin-left: 96px; visibility: hidden; order: 1;"><span role="img" aria-label="ellipsis" class="anticon anticon-ellipsis"><svg viewBox="64 64 896 896" focusable="false" data-icon="ellipsis" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"></path></svg></span></button></div></div><div class="ant-tabs-content-holder"><div class="ant-tabs-content ant-tabs-content-top"><div role="tabpanel" tabindex="0" aria-hidden="false" class="ant-tabs-tabpane ant-tabs-tabpane-active" id="rc-tabs-0-panel-MEETYOU_INMAIL" aria-labelledby="rc-tabs-0-tab-MEETYOU_INMAIL" style=""><div class="flex flex-nowrap divide-x divide-y-0 divide-solid divide-[#f0f0f0]"><div class="flex-1 p-[24px]"><div class="ant-row px-[24px]"><div class="ant-col ant-col-9"><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-6 ant-form-item-label"><label for="material_config_inmail_materials_0_title" class="ant-form-item-required" title="标题">标题</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><textarea placeholder="不超过60字" id="material_config_inmail_materials_0_title" aria-required="true" class="ant-input"></textarea></div></div></div></div></div></div><div class="ant-col ant-col-6"><div class="ant-space ant-space-vertical" style="display: flex; gap: 8px;"><div class="ant-space-item" style=""><div class="ant-form-item" style="margin-bottom: 0px;"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-8 ant-form-item-label"><label for="material_config_inmail_materials_0_wide_image" class="ant-form-item-required" title="封面图">封面图</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div id="material_config_inmail_materials_0_wide_image" class="placeholder-0-1-6" style="width: 100px; height: 100px;"><div class="ant-spin-nested-loading"><div class="ant-spin-container"><div class="ant-space ant-space-vertical" style="display: flex; align-items: center; gap: 8px;"><div class="ant-space-item" style=""><span role="img" aria-label="plus" class="anticon anticon-plus"><svg viewBox="64 64 896 896" focusable="false" data-icon="plus" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"></path><path d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"></path></svg></span></div><div class="ant-space-item">上传图片</div></div></div></div></div></div></div></div></div></div></div><div class="ant-space-item"><span class="ant-typography ant-typography-secondary">1053*459，jpg、png、gif</span></div></div></div><div class="ant-col ant-col-9 !flex"><div class="ant-form-item flex-1"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-8 ant-form-item-label"><label class="ant-form-item-required" title="跳转按钮">跳转按钮</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-space ant-space-vertical" style="display: flex; gap: 0px;"><div class="ant-space-item" style=""><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-select ant-select-in-form-item ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-show-search" aria-required="true" style="width: 100%;"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" id="material_config_inmail_materials_0_uri_key" autocomplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="material_config_inmail_materials_0_uri_key_list" aria-autocomplete="list" aria-controls="material_config_inmail_materials_0_uri_key_list" aria-activedescendant="material_config_inmail_materials_0_uri_key_list_0" aria-required="true" value=""></span><span class="ant-select-selection-placeholder">选择跳转目标</span></div><span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;"><span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></span></div></div></div></div></div></div></div><div class="ant-space-item"></div></div></div></div></div></div></div><button type="button" class="ant-btn ant-btn-text" disabled=""><span role="img" aria-label="close-circle" class="anticon anticon-close-circle text-[20px] cursor-pointer"><svg fill-rule="evenodd" viewBox="64 64 896 896" focusable="false" data-icon="close-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm0 76c-205.4 0-372 166.6-372 372s166.6 372 372 372 372-166.6 372-372-166.6-372-372-372zm128.01 198.83c.03 0 .05.01.09.06l45.02 45.01a.2.2 0 01.05.09.12.12 0 010 .07c0 .02-.01.04-.05.08L557.25 512l127.87 127.86a.27.27 0 01.05.06v.02a.12.12 0 010 .07c0 .03-.01.05-.05.09l-45.02 45.02a.2.2 0 01-.09.05.12.12 0 01-.07 0c-.02 0-.04-.01-.08-.05L512 557.25 384.14 685.12c-.04.04-.06.05-.08.05a.12.12 0 01-.07 0c-.03 0-.05-.01-.09-.05l-45.02-45.02a.2.2 0 01-.05-.09.12.12 0 010-.07c0-.02.01-.04.06-.08L466.75 512 338.88 384.14a.27.27 0 01-.05-.06l-.01-.02a.12.12 0 010-.07c0-.03.01-.05.05-.09l45.02-45.02a.2.2 0 01.09-.05.12.12 0 01.07 0c.02 0 .04.01.08.06L512 466.75l127.86-127.86c.04-.05.06-.06.08-.06a.12.12 0 01.07 0z"></path></svg></span></button></div></div><div class="flex justify-end px-[24px]"><button type="button" class="ant-btn ant-btn-default"><span>新增一篇</span></button></div></div><div class="flex-[0_0_auto] p-[8px]"><span class="ant-typography ant-typography-secondary">效果仅做为示意参考，实际不同机型效果不同</span><div class="w-[375px] h-[812px] text-[#323232] bg-[url('https://static.seeyouyima.com/admin-manager/push-management/assets/preview-bg-v1.png')] bg-cover" style="zoom: 0.7;"><div class="h-[88px] pb-[10px] flex items-end justify-center text-[17px]"></div><div class="text-center text-[#999] text-[11px] my-[8px]">星期四 19:12</div><div class="px-[12px]"><div class="bg-white rounded-[12px] overflow-hidden"><div class="bg-cover h-[153px] flex items-end"></div><div class="p-[12px] text-[15px] leading-[24px]"><div class="line-clamp-2"></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="ant-card ant-card-small ant-card-type-inner"><div class="ant-card-head" style="border: none; background: rgb(245, 245, 245);"><div class="ant-card-head-wrapper"><div class="ant-card-head-title">推送范围</div></div></div><div class="ant-card-body" style="padding-bottom: 0px;"><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="app_limit_platform" class="ant-form-item-required" title="客户端平台">客户端平台</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-checkbox-group" id="app_limit_platform" aria-required="true"><label class="ant-checkbox-wrapper ant-checkbox-wrapper-in-form-item"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox" value="2"><span class="ant-checkbox-inner"></span></span><span>iOS</span></label><label class="ant-checkbox-wrapper ant-checkbox-wrapper-in-form-item"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox" value="3"><span class="ant-checkbox-inner"></span></span><span>Android</span></label><label class="ant-checkbox-wrapper ant-checkbox-wrapper-in-form-item"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox" value="8"><span class="ant-checkbox-inner"></span></span><span>Harmony</span></label></div></div></div></div></div></div><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label class="" title="版本限制">版本限制<span role="img" aria-label="question-circle" title="" class="anticon anticon-question-circle ant-form-item-tooltip"><svg viewBox="64 64 896 896" focusable="false" data-icon="question-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M623.6 316.7C593.6 290.4 554 276 512 276s-81.6 14.5-111.6 40.7C369.2 344 352 380.7 352 420v7.6c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V420c0-44.1 43.1-80 96-80s96 35.9 96 80c0 31.1-22 59.6-56.1 72.7-21.2 8.1-39.2 22.3-52.1 40.9-13.1 19-19.9 41.8-19.9 64.9V620c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-22.7a48.3 48.3 0 0130.9-44.8c59-22.7 97.1-74.7 97.1-132.5.1-39.3-17.1-76-48.3-103.3zM472 732a40 40 0 1080 0 40 40 0 10-80 0z"></path></svg></span></label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-space ant-space-horizontal ant-space-align-center" style="gap: 8px;"><div class="ant-space-item" style=""><span class="ant-input-affix-wrapper"><input placeholder="xx.xx.xx" id="app_limit_version_min" class="ant-input" type="text" value=""><span class="ant-input-suffix"><span class="ant-input-clear-icon ant-input-clear-icon-hidden" role="button" tabindex="-1"><span role="img" aria-label="close-circle" class="anticon anticon-close-circle"><svg fill-rule="evenodd" viewBox="64 64 896 896" focusable="false" data-icon="close-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm127.98 274.82h-.04l-.08.06L512 466.75 384.14 338.88c-.04-.05-.06-.06-.08-.06a.12.12 0 00-.07 0c-.03 0-.05.01-.09.05l-45.02 45.02a.2.2 0 00-.05.09.12.12 0 000 .07v.02a.27.27 0 00.06.06L466.75 512 338.88 639.86c-.05.04-.06.06-.06.08a.12.12 0 000 .07c0 .03.01.05.05.09l45.02 45.02a.2.2 0 00.09.05.12.12 0 00.07 0c.02 0 .04-.01.08-.05L512 557.25l127.86 127.87c.04.04.06.05.08.05a.12.12 0 00.07 0c.03 0 .05-.01.09-.05l45.02-45.02a.2.2 0 00.05-.09.12.12 0 000-.07v-.02a.27.27 0 00-.05-.06L557.25 512l127.87-127.86c.04-.04.05-.06.05-.08a.12.12 0 000-.07c0-.03-.01-.05-.05-.09l-45.02-45.02a.2.2 0 00-.09-.05.12.12 0 00-.07 0z"></path></svg></span></span></span></span></div><div class="ant-space-item" style="">至</div><div class="ant-space-item"><span class="ant-input-affix-wrapper"><input placeholder="xx.xx.xx" id="app_limit_version_max" class="ant-input" type="text" value=""><span class="ant-input-suffix"><span class="ant-input-clear-icon ant-input-clear-icon-hidden" role="button" tabindex="-1"><span role="img" aria-label="close-circle" class="anticon anticon-close-circle"><svg fill-rule="evenodd" viewBox="64 64 896 896" focusable="false" data-icon="close-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm127.98 274.82h-.04l-.08.06L512 466.75 384.14 338.88c-.04-.05-.06-.06-.08-.06a.12.12 0 00-.07 0c-.03 0-.05.01-.09.05l-45.02 45.02a.2.2 0 00-.05.09.12.12 0 000 .07v.02a.27.27 0 00.06.06L466.75 512 338.88 639.86c-.05.04-.06.06-.06.08a.12.12 0 000 .07c0 .03.01.05.05.09l45.02 45.02a.2.2 0 00.09.05.12.12 0 00.07 0c.02 0 .04-.01.08-.05L512 557.25l127.86 127.87c.04.04.06.05.08.05a.12.12 0 00.07 0c.03 0 .05-.01.09-.05l45.02-45.02a.2.2 0 00.05-.09.12.12 0 000-.07v-.02a.27.27 0 00-.05-.06L557.25 512l127.87-127.86c.04-.04.05-.06.05-.08a.12.12 0 000-.07c0-.03-.01-.05-.05-.09l-45.02-45.02a.2.2 0 00-.09-.05.12.12 0 00-.07 0z"></path></svg></span></span></span></span></div></div></div></div></div></div></div><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="ab_exp" class="" title="AB实验组">AB实验组</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input placeholder="xxxx-xxxx" id="ab_exp" class="ant-input" type="text" value="" style="width: 250px;"></div></div></div></div></div><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="target_config_crowd_key" class="ant-form-item-required" title="推送人群">推送人群</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="container-0-1-4"><div class="ant-select ant-select-in-form-item select-0-1-5 ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-show-search" aria-required="true"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" id="target_config_crowd_key" autocomplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="target_config_crowd_key_list" aria-autocomplete="list" aria-controls="target_config_crowd_key_list" aria-activedescendant="target_config_crowd_key_list_0" aria-required="true" value=""></span><span class="ant-select-selection-placeholder">请选择</span></div><span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;"><span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></span></div></div></div></div></div></div></div><div class="ant-form-item" style="display: none;"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input id="target_config_crowd_table" disabled="" class="ant-input ant-input-disabled" type="text" value=""></div></div></div></div></div><div class="ant-form-item" style="display: none;"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><input id="target_config_crowd_id" disabled="" class="ant-input ant-input-disabled" type="text" value=""></div></div></div></div></div></div></div><div class="ant-card ant-card-small ant-card-type-inner"><div class="ant-card-head" style="border: none; background: rgb(245, 245, 245);"><div class="ant-card-head-wrapper"><div class="ant-card-head-title">推送时间</div></div></div><div class="ant-card-body" style="padding-bottom: 0px;"><div class="ant-form-item"><div class="ant-row ant-form-item-row"><div class="ant-col ant-col-4 ant-form-item-label"><label for="time_config_push_at" class="ant-form-item-required" title="推送时间">推送时间</label></div><div class="ant-col ant-col-16 ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-picker"><div class="ant-picker-input"><input id="time_config_push_at" readonly="" placeholder="请选择" title="" size="21" aria-required="true" autocomplete="off" value=""><span class="ant-picker-suffix"><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span></span></div></div></div></div></div></div></div></div></div></form></div><div class="ant-space-item"><div class="ant-space ant-space-horizontal ant-space-align-center" style="gap: 8px;"><div class="ant-space-item" style=""><button type="button" class="ant-btn ant-btn-primary"><span>创 建</span></button></div><div class="ant-space-item"><a href="/plan/normal/list" class="ant-btn ant-btn-default"><span>取 消</span></a></div></div></div></div></div></div></div></div></astro-island>
+  
+
+</body></html>
